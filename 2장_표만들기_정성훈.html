@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표만들기_정성훈</title>
+</head>
+<body>
+    <h1>2줄 3칸 기본 표만들기</h1>
+    <table border="1" width="50%">
+        <caption>
+            <strong>기본 테이블입니다.</strong>
+        </caption>
+        <!--1번줄-->
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <!--2번줄-->
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1>표에 제목 셀 만들기</h1>
+    <figure>
+        <figcaption>
+            표에 제목 셀 만들기 입니다.
+        </figcaption>
+    </figure>
+    <table border="1" width="100%">
+        <tr>
+            <th>학과</th>
+            <td>스마트전기전자공학부</td>
+        </tr>
+        <tr>
+            <th>학번</th>
+            <td>201894064</td>
+        </tr>
+        <tr>
+            <th>이름</th>
+            <td>정성훈</td>
+        </tr>
+    </table>
+
+
+    <hr>
+    <h1>표에 셀 합치기</h1>
+        <table border="1" width="100%">
+        <tr>
+            <td colspan="3">1,2,3</td>
+            <td rowspan="3">4,8,12</td>
+        </tr>
+        <tr>
+            <td rowspan="2">5,9</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>11</td>
+        </tr>
+        </table>
+
+    <hr>
+
+        <h2>2023년 1학기 시간표</h2>
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>구분</th>
+                    <th>월</th>
+                    <th>화</th>
+                    <th>수</th>
+                    <th>목</th>
+                    <th>금</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1교시</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td rowspan="2">공학적 글쓰기</td>
+                </tr>
+                <tr>
+                    <th>2교시</th>
+                    <td rowspan="2">컴퓨터공학개론</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>3교시</th>
+                    <td rowspan="2">S/W프로그래밍사고</td>
+                    <td></td>
+                    <td></td>
+                    <td rowspan="2">SEP 1</td>
+                </tr>
+                <tr>
+                    <th>4교시</th>
+                    <td></td>
+                    <td>컴퓨터공학개론</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>5교시</th>
+                    <td></td>
+                    <td rowspan="2">글로벌직업탐구</td>
+                    <td rowspan="2">S/W프로그래밍사고</td>
+                    <td></td>
+                    <td rowspan="2">웹제작</td>
+                </tr>
+                <tr>
+                    <th>6교시</th>
+                    <td></td>
+                    <td>대학생활과 진로탐색</td>
+                </tr>
+                <tr>
+                    <th>7교시</th>
+                    <td rowspan="2">웹제작</td>
+                    <td></td>
+                    <td rowspan="2">SEP 1</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>8교시</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>9교시</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr><td colspan="6">1교시는 9시 30분부터 시작입니다.</td></tr>
+            </tfoot>
+        </table>
+
+    </table>
+
+</body>
+</html>
