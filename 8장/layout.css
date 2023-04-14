@@ -43,7 +43,63 @@ nav ul li {
     margin: 15px;
 }
 
-a { /* nav a or nav ul li a*/
+a { /* (nav a) or (nav ul li a) 로 상세화 가능 */
     text-decoration: none;
     color: white;
+}
+
+section {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; /* 영역 가운데 정렬 */
+    border: 5px solid #333;
+    padding: 5px;
+    /* border-width: ;
+    border-style: ;
+    border-color: ; */
+}
+
+h2 {
+    font-size: 1.8em;
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: -3px 3px 3px 3px rgb(198,198,198); /* box-shadiw (x좌표,y좌표,흐림,번짐)*/
+}
+
+h3 {
+    font-size: 1.3em;
+    padding: 15px 0px 15px 10px;
+    border-left: 8px solid rgb(242,56,146);
+    line-height: 30px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 30px;
+    margin: 20px;
+}
+
+dl {
+    line-height: 30px;
+    padding-left: 30px;
+    margin-right: 30px;
+}
+
+dt {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: skyblue;
+}
+ul {     /* ul 대신 (p > ul),(p ul),(article ul)등등 사용가능 */
+    line-height: 30px;
+}
+
+footer {
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
 }
