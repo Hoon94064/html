@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>201894064_정성훈</title>
+
+    <link rel="stylesheet" type="text/css" href="201894064.css">
+
+    <style>
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div> <!---이미지 영역-->>
+            <img src="images/main.jpg">
+        </div>
+        <div>   <!---제목 영역-->
+            <h1>지금도 그렇고 미래도 소프트웨어 세상입니다!</h1>
+            <p>4차 산업혁명을 선도할 소프트웨어 개발 인재를 양성합니다.</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="introduction.html">학과소개</a> ㅣ
+        <a href="history.html">학과연혁</a> ㅣ
+        <a href="join.html">회원가입</a>
+    </nav>
+
+    <section>
+        <h2>학과 소개</h2>
+        <h3>컴퓨터공학전공</h3>
+            <h4>소개</h4>
+                컴퓨터공학의 전반적인 교과목을 학습하여 다양한 IT분야로 진출할 수 있는 기본 역량을 배양하고,
+                사물인터넷, 클라우드시스템, 빅데이터처리, 인공지능 등 고급 IT기술에 대한 심화 학습을 통해
+                취업 역량을 강화하여 현장 밀착형 IT 전문가를 양성하는 전공	
+
+            <h4>교육과정</h4>
+            <dl>
+                <dt>1학년 1학기 ~ 2학년 2학기 (4개 학기)</dt>
+                <dd>컴퓨터구조, 자료구조, 컴퓨터통신, 운영체제 등의 컴퓨터공학의 기초 과목과 Python, C, C++, C#, Java 등 실무에서 요구되는 프로그래밍 언어를 실습 중심으로 학습하면서 프로그램 코딩 역량을 배양합니다.</dd>
+
+                <dt>3학년 1학기 ~ 4학년 2학기 (4개 학기)</dt>
+                <dd>현장 밀착형 실무 기술과 고급 IT 기술을 소프트웨어엔지니어링, IoT 프로그래밍, 클라우드시스템 이해, 인공지능 등 전공심화 교과목을 통해 학습하고, 캡스톤디자인 교과목을 통해 실무 프로젝트를 수행합니다.</dd>
+            </dl>
+
+        <h2>학과 연혁</h2>
+        <article>
+            <table border="1">
+                <tr>
+                    <th rowspan="3">2022</th>
+                    <td>07월</td>
+                    <td>LINK 3.0 국책 사업 참여</td>
+                </tr>
+                <tr>
+                    <td>06월</td>
+                    <td>MICT융합공과대학 스마트제조 고급인력 양성 사업 참여</td>
+                </tr>
+                <tr>
+                    <td>05월</td>
+                    <td>
+                        메타버스전공 신설<br>
+                        컴퓨터공학부 모집 단위 변경<br>
+                        <ul>
+                            <il>컴퓨터공학전공</il>
+                            <li>메타버스전공</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="2">2021</th>
+                    <td>06월</td>
+                    <td>
+                        컴퓨터공학부로 명칭 변경
+                        <ul>
+                            <li>컴퓨터공학전공</li>
+                            <li>빅데이터/클라우드전공</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>03월</td>
+                    <td>교육부 주관, 인공지능(AI) 창의융합 인재양성 사업 참여</td>
+                </tr>
+                <tr>
+                    <th>2018</th>
+                    <td>03월</td>
+                    <td>부산광역시, 소프트웨어사관학교 사업 참여</td>
+                </tr>
+            </table>
+        </article>
+
+        <h2>회원가입</h2>
+        <article>
+            <form name="myForm" method="get" action="welcom.html">
+                <!--개인 정보 구역(필수 입력)-->
+                <fieldset>
+                    <legend>개인 정보(필수입력)</legend>
+                    <ul>
+                        <li>
+                            <label for="user_id" class="title"> 아이디 </label>
+					        <input type="text" name="user_id" id="user_id" required>
+                        </li>
+                        <li>
+                            <label for="user_pw" class="title"> 비밀번호 </label>
+					        <input type="password" name="user_pw" id="user_pw" required>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <!--추가 정보 구역(선택 사항)-->
+                <fieldset>
+                    <legend>추가 정보(선택사항)</legend>
+                    <ul>
+                        <li>
+                            <label for="user_tel" class="title"> 전화번호 </label>
+					        <input type="tel" name="user_tel" id="user_tel">
+                        </li>
+                        <li>
+                            성별
+                            <input type="radio" name="sex" id="man" value="남">남
+                            <input type="radio" name="sex" id="woman" value="여"> 여
+                        </li>
+                        <li>
+                            관심분야
+                            <input type="checkbox" name="ck_C" id="ck_C" value="C Program">
+                            <label for="ck_C">C</label>
+                            <input type="checkbox" name="ck_python" id="ck_python" value="python">
+                            <label for="ck_python">파이썬</label>
+
+                            <label>
+                            <input type="checkbox" name="ck_R" id="ck_R" value="R">R
+                            </label>
+                            <label>
+                            <input type="checkbox" name="ck_app" id="ck_app" value="appinvanter"> 앱인벤터
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <!---버튼 영역-->
+                <div>
+                    <input type="submit" value="가입하기">
+                    <input type="reset" value="다시작성">
+                </div>
+            </form>
+        </article>
+    </section>
+
+    <footer>
+        <p>스마트전기전자공학부 201894064 정성훈</p>
+    </footer>    
+</body>
+</html>
