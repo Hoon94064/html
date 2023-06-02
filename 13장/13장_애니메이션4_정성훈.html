@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션4 _ 정성훈</title>
+</head>
+    
+    <style>
+        #box1 {
+            height: 100px;
+            width: 100px;
+            margin-top: 50px;
+            padding: 20px;
+            margin-left: 100px;
+            background-color: aquamarine;
+            animation-name: rotate;
+            animation-duration: 3s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+        }
+        @keyframes rotate {
+            from {
+                transform: perspective(300px) rotateX(0deg) rotateY(0deg);
+                background-color: aquamarine;
+            }
+            50% {
+                transform: perspective(300px) rotateX(-180deg) rotateY(0deg);
+                background-color: blue;
+            }
+            to {
+                transform: perspective(300px) rotateX(-180deg) rotateY(-180deg);
+                background-color: pink;
+            }
+        }
+    </style>
+<body>
+    <div id="box1"></div>
+</body>
+</html>
